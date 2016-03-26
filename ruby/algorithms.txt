@@ -1,0 +1,19 @@
+-using an elevator 
+   -press up arrow on wall
+   -walk forward through doors when they open
+   -turn around
+   -press button 4 to go to fourth floor
+   -walk forward off elevator when doors open again
+
+  -my everyday task (pouring a beer)
+  	- ask customer what beer they would like to drink
+  	- turn around to the glasses 
+  	-if answer is hofbrau pull corresponding glass off the shelf
+  	-move to the left to the taps
+  	-place glass under tap at a 45 degree angle
+  	-do not let glass touch the tap
+  	-pull tap handle forward until fully extended
+  	-let beer fill the glass to the line
+  	-push tap handle backwards to fill the rest of the glass with head
+  	-turn around to customer
+  	-present beer
