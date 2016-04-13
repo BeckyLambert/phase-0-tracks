@@ -1,29 +1,34 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
-# We spent [#] hours on this challenge.
+# I worked on this challenge [with: Doug James ].
+# We spent [1.5] hours on this challenge.
 
 # EXPLANATION OF require_relative
 #
 #
-require_relative 'state_data'
+require_relative 'state_data' 
 
 class VirusPredictor
-
+   # initalizes program and holds attributes for use in other methods. 
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
     @population_density = population_density
   end
-
+  #calls the 2 methods "predicted_deaths" & "speed of spread" & passing through arguments
+  # Consider the scope of instance variables to determine what could be refactored. Once you 
+  #figure out what the issue is, you'll need to edit the predicted_deaths and speed_of_spread methods
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+    predicted_deaths
+    speed_of_spread
   end
 
   private
+  #If you move private above virus_effects the method doesn't work! 
+  #To call private methode you need to be within the scope of the project.
 
-  def predicted_deaths(population_density, population, state)
+#takes the population density and population and state and predicts a number of deaths
+  def predicted_deaths
     # predicted deaths is solely based on population density
     if @population_density >= 200
       number_of_deaths = (@population * 0.4).floor
@@ -41,7 +46,9 @@ class VirusPredictor
 
   end
 
-  def speed_of_spread(population_density, state) #in months
+#takes population density and state and predicts the speed of the spread of the virus.
+  def speed_of_spread
+   #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
     speed = 0.0
@@ -81,3 +88,19 @@ california.virus_effects
 
 alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
 alaska.virus_effects
+
+# release 5 driver code:
+# STATE_DATA.each do |state, data_hash|
+#   VirusPredictor.new(state, data_hash[:population_density], data_hash[:population]).virus_effects
+# end
+
+# Reflection:
+#require pulls a file from any directory, 
+#require relative loads the file that is relative to your current file.  
+
+
+
+
+
+
+
