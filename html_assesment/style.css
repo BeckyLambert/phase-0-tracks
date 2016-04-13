@@ -1,0 +1,61 @@
+#thumbnail {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-left: 10px;
+
+}
+
+header {
+	font-family: cursive;
+	color: navy;
+	margin-top: 200px;
+	margin-left: 10px;
+}
+
+p {
+	font-family: helvetica;
+
+}
+
+body {
+    background: gray;
+	margin-left: 50px; 
+	margin-right:50px;
+}
+
+#p1 {
+
+	border-style: solid;
+	border-color: white;
+	margin-left: 50px; 
+	margin-right:50px;
+}
+
+.p2 {
+	border-style: solid;
+	border-color: white;
+	margin-left: 50px; 
+	margin-right:50px;
+}
+
+.p3 {
+	border-style: solid;
+	border-color: green;
+	margin-left: 50px; 
+	margin-right:50px;
+}
+
+.left {
+    width: 178px;
+    float:left;
+}
+.main {
+  margin-left:178px;
+ }
+
+ #list {
+ 	margin-left: 10px;
+ }
