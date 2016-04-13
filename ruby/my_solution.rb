@@ -95,9 +95,21 @@ alaska.virus_effects
 # end
 
 # Reflection:
-#require pulls a file from any directory, 
-#require relative loads the file that is relative to your current file.  
+# What does require_relative do? How is it different from require?
+#require pulls a file from any directory, require relative loads the file that is relative to your current file.  
 
+# What are the differences between the two different hash syntaxes shown in the state_data file?
+# the biggest difference we noticed was that in the state_data file it was numerous hashes inside one larger hash.
+
+# What are some ways to iterate through a hash?
+# the easiest way I found was using the index, you can also use .each and .map
+
+# When refactoring virus_effects, what stood out to you about the variables, if anything?
+# they are not needed because the arguments are in the initialize method 
+
+# What concept did you most solidify in this challenge?
+# I learned quite a bit in this challenge, like the state_data variable being a constant variable and what 
+# it's scope is. Also learning more about 'private' and how it works. 
 
 
 
