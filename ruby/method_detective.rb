@@ -4,7 +4,6 @@
 # When there's more than one suspect who could have
 # committed the crime, add additional calls to prove it.
 
-<<<<<<< HEAD
 puts "iNvEsTiGaTiOn".swapcase
 # => "InVeStIgAtIoN"
 
@@ -35,44 +34,14 @@ puts "Elementary  ,    my   dear      Watson!".squeeze(" ").gsub(' ,', ',')
 # => "Elementary, my dear Watson!"
 
 puts "z".ord
-=======
-# "iNvEsTiGaTiOn".<???>
-# => “InVeStIgAtIoN”
 
-# "zom".<???>
-# => “zoom”
-
-# "enhance".<???>
-# => "    enhance    "
-
-# "Stop! You’re under arrest!".<???>
-# => "STOP! YOU’RE UNDER ARREST!"
-
-# "the usual".<???>
-#=> "the usual suspects"
-
-# " suspects".<???>
-# => "the usual suspects"
-
-# "The case of the disappearing last letter".<???>
-# => "The case of the disappearing last lette"
-
-# "The mystery of the missing first letter".<???>
-# => "he mystery of the missing first letter"
-
-# "Elementary,    my   dear        Watson!".<???>
-# => "Elementary, my dear Watson!"
-
-# "z".<???>
->>>>>>> d481b60b3eb4a01f7e489c91091f97456ce3f585
 # => 122 
 # (What is the significance of the number 122 in relation to the character z?)
 # It's the ordinal number of this one character string.
 
-<<<<<<< HEAD
 
 puts "How many times does the letter ‘a’ appear in this string?".count "a"
-=======
 # "How many times does the letter 'a' appear in this string?".<???>
->>>>>>> d481b60b3eb4a01f7e489c91091f97456ce3f585
 # => 4
+
+
