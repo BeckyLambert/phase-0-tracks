@@ -1,6 +1,6 @@
 # This is an example of taking an order for food and beer where I work 
 
-prost = {
+ein_prosit = {
     food: {
         sausages: 'Four Sampler',
         sampler_info: [
@@ -24,3 +24,8 @@ prost = {
             seats_available: 70
         },
 }
+
+#driver code:
+ein_prosit[:beers][:type]
+ein_prosit[:food][:sausages]
+ein_prosit[:food][:sides][1]
