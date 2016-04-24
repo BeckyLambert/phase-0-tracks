@@ -1,5 +1,5 @@
 #Prompt the designer/user for the client's name, age, number of children, and decor theme.
-client = {name: "nil", age: nil, children: nil, modern_style: nil, mountain_theme: nil}
+client = {name: " ", age: nil, children: nil, modern_style: nil, mountain_theme: nil}
 
 puts "Client Information Questionaire: "
 
