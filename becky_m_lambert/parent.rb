@@ -10,8 +10,12 @@ attr_reader :hours
 	end
 
 	def greet_child
-		p "*yaaaawn* I'm up, I'm up. #{name} is up. Whats the matter"
+		p "*yaaaawn* I'm up, I'm up. #{name} is up. Whats the matter?"
 	end
+	#question 10 method:
+	def greeting_2
+		p "Let me drink some coffee, then we'll talk."
+	end 
 
 	def hear_request(request)
 		if @past_requests.length < 5
@@ -26,16 +30,17 @@ attr_reader :hours
 	end 
 
 	def display_request_history
-		@past_requests.each do |request, granted|
+		@past_requests.each do |request, answer|
 	end 
 	
 	end 
 end 
 
-parent = Parent.new("bob", 4)
+parent = Parent.new("Bob", 4)
 parent.greet_child
+parent.greeting_2
 parent.hear_request("please buy me a toy")
-parent.hear_request("I want to pass this assesment")
+parent.hear_request("I want to need this assesment")
 parent.hear_request("can you make breakfast")
 parent.hear_request("can we get a puppy")
 parent.hear_request("I want a unicorn!")
