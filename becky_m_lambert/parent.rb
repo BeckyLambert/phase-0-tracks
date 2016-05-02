@@ -36,7 +36,7 @@ attr_reader :hours
 	end 
 end 
 
-parent = Parent.new("Bob", 4)
+parent = Parent.new("mom", 5)
 parent.greet_child
 parent.greeting_2
 parent.hear_request("please buy me a toy")
@@ -47,7 +47,7 @@ parent.hear_request("I want a unicorn!")
 parent.display_request_history
 
 #Question 8:
-# This was as close as I could get. I cant get it to print anything but an empty count though.
+# This was as close as I could get. I can't get it to print anything but an empty count though.
 # def count_vowels(string)
 #  requests = ["please buy me a toy", "I need to pass this assesment", "can you make breakfast", "can we get a puppy", "I want a unicorn!"]
 #   i = 0
