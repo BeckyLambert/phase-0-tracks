@@ -1,3 +1,4 @@
+// Release 1
 var names = ["prancy", "bob", "charlie", "squirt"];
 var colors = ["blue", "purple", "red", "green"];
 
@@ -17,38 +18,33 @@ for (var i = 0; i < names.length; i++) {
 // Release 2
 
 function Car(model, year, color) {
- 
-  console.log("Drive this car:", this);
-
+  console.log("Drive this car", this);
   this.model = model;
   this.year = year;
-  this.color = color;   
+  this.color = color;
 }
 
-var anotherCar = new Car("Mini Cooper", 2010, "Black");
+var newCar = new Car("Honda", 2004, "red");
+console.log(newCar);
+console.log("Your car is " + newCar.model + ".")
+console.log("The year of your car is " + newCar.year + ".")
+console.log("Your car's color is " + newCar.color + ".")
+
+var anotherCar = new Car("Subaru", 2002, "white");
 console.log(anotherCar);
 console.log("Your car is " + anotherCar.model + ".")
 console.log("The year of your car is " + anotherCar.year + ".")
 console.log("Your car's color is " + anotherCar.color + ".")
 
-console.log("")
-var anotherCar = new Car("Subaru", 2014, "White");
-console.log(anotherCar);
-console.log("Your car is " + anotherCar.model + ".")
-console.log("The year of your car is " + anotherCar.year + ".")
-console.log("Your car's color is " + anotherCar.color + ".")
-
-console.log("")
-var anotherCar = new Car("Dodge", 2008, "Red");
-console.log(anotherCar);
-console.log("Your car is " + anotherCar.model + ".")
-console.log("The year of your car is " + anotherCar.year + ".")
-console.log("Your car's color is " + anotherCar.color + ".")
-
+var anotherNewCar = new Car("BMW", 2007, "black");
+console.log(anotherNewCar);
+console.log("Your car is " + anotherNewCar.model + ".")
+console.log("The year of your car is " + anotherNewCar.year + ".")
+console.log("Your car's color is " + anotherNewCar.color + ".")
 
 var car = {
-  model: 'Dodge', 
-  'year': 2008, 
+  model: 'Mercedes',
+  'year': 2008,
   snow: true, 
     weather: function() { 
       if (this.snow) {
@@ -60,9 +56,9 @@ var car = {
 };
 
 
-car.snow = true;
+car.snow = false;
 car.weather();
-
+  
 // Release 3
 
 // 1. You can use a for loop to loop through each index for the keys and values.
