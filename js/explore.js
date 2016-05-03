@@ -18,9 +18,5 @@ var reversedString = reverse(testString);
 var time = true;
 var money = true;
 if (time == money) {
-	console.log(reversedString);
-
-} else {
-	// do nothing
-	
+	console.log(reversedString); // with an if/else statement if there is no "else" statement you dont have to include it.
 }
