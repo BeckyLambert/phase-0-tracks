@@ -1,7 +1,7 @@
 # Virus Predictor
 
-# I worked on this challenge [with: Doug James ].
-# We spent [1.5] hours on this challenge.
+# I worked on this challenge [with: Nick ].
+# We spent [1] hour on this challenge.
 
 # EXPLANATION OF require_relative
 #
@@ -10,6 +10,8 @@ require_relative 'state_data'
 
 class VirusPredictor
    # initalizes program and holds attributes for use in other methods. 
+  attr_reader :population, :population_density, :state
+  
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
@@ -30,17 +32,19 @@ class VirusPredictor
 #takes the population density and population and state and predicts a number of deaths
   def predicted_deaths
     # predicted deaths is solely based on population density
-    if @population_density >= 200
-      number_of_deaths = (@population * 0.4).floor
-    elsif @population_density >= 150
-      number_of_deaths = (@population * 0.3).floor
-    elsif @population_density >= 100
-      number_of_deaths = (@population * 0.2).floor
-    elsif @population_density >= 50
-      number_of_deaths = (@population * 0.1).floor
+       if population_density >= 200
+          death_constant = 0.4
+    elsif population_density >= 150
+          death_constant = 0.3
+    elsif population_density >= 100
+          death_constant = 0.2
+    elsif population_density >= 50
+          death_constant = 0.1
     else
-      number_of_deaths = (@population * 0.05).floor
+      death_constant = 0.05
     end
+
+    number_of_deaths = (population * death_constant).floor
 
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 
@@ -51,22 +55,18 @@ class VirusPredictor
    #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
-    speed = 0.0
-
-    if @population_density >= 200
-      speed += 0.5
-    elsif @population_density >= 150
-      speed += 1
-    elsif @population_density >= 100
-      speed += 1.5
-    elsif @population_density >= 50
-      speed += 2
+    if population_density >= 200
+       speed = 0.5
+    elsif population_density >= 150
+       speed = 1
+    elsif population_density >= 100
+          speed = 1.5
+    elsif population_density >= 50
+          speed = 2
     else
-      speed += 2.5
+      speed = 2.5
     end
-
-    puts " and will spread across the state in #{speed} months.\n\n"
-
+       puts " and will spread across the state in #{speed} months.\n\n"
   end
 
 end
@@ -90,9 +90,9 @@ alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density],
 alaska.virus_effects
 
 # release 5 driver code:
-# STATE_DATA.each do |state, data_hash|
-#   VirusPredictor.new(state, data_hash[:population_density], data_hash[:population]).virus_effects
-# end
+STATE_DATA.each do |state, data_hash|
+  VirusPredictor.new(state, data_hash[:population_density], data_hash[:population]).virus_effects
+end
 
 # Reflection:
 # What does require_relative do? How is it different from require?
