@@ -16,6 +16,13 @@ sqlite> SELECT stars, comment, users.first_name, users.last_name, businesses.nam
 5|made me howl all night long|Angela|Jolie|The Beagle Nightclub
 
 4.
-SELECT stars, comment, users.first_name, users.last_name, businesses.name FROM reviews JOIN users ON reviews.users_id = users.id, businesses ON reviews.businesses_id = businesses.id WHERE reviews.id = 1;
+sqlite> SELECT stars, comment, users.first_name, users.last_name, businesses.name FROM reviews JOIN users ON reviews.users_id = users.id, businesses ON reviews.businesses_id = businesses.id WHERE reviews.id = 2;
+2|late tow truck|Angela|Jolie|Amir's Towing
 
+sqlite> SELECT stars, comment, users.first_name, users.last_name, businesses.name FROM reviews JOIN users ON reviews.users_id = users.id, businesses ON reviews.businesses_id = businesses.id WHERE reviews.id = 1;
 4|Great food!|Bradford|Pitt|Sushi World
+
+Or if you want list all restaurants with (x) number of stars:
+
+sqlite> SELECT stars, comment, users.first_name, users.last_name, businesses.name FROM reviews JOIN users ON reviews.users_id = users.id, businesses ON reviews.businesses_id = businesses.id WHERE stars = 5;
+5|made me howl all night long|Angela|Jolie|The Beagle Nightclub
