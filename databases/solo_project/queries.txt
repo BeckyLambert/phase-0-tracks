@@ -1,0 +1,40 @@
+Release 2:
+
+1.
+sqlite> select * from customers
+   ...> ;
+1|John|Doe
+2|Amy|Smith
+3|Brad|Clien
+4|Becky|Lambert
+
+2.
+sqlite> UPDATE customers SET last_name="Adams" WHERE first_name="John";
+sqlite> select * from customers
+   ...> ;
+1|John|Adams
+2|Amy|Smith
+3|Brad|Clien
+4|Becky|Lambert
+
+3.
+SELECT * FROM customers JOIN ages;
+1|John|Adams|27|true
+2|Amy|Smith|19|false
+3|Brad|Clien|35|true
+4|Becky|Lambert|29|true
+
+4.
+sqlite> SELECT customers.first_name, customers.last_name, of_age FROM customers JOIN ages WHERE of_age="false";
+Amy|Smith|false
+
+5.
+sqlite> DELETE FROM ages WHERE of_age="false";
+sqlite> select * from ages
+   ...> ;
+1|27|true
+3|35|true
+4|29|true
+
+Release 3:
+There are 6 different kinds of joins. Inner, left, right, full, union, and outer. I think for this project the inner join works the best. From what I’ve found inner joins are the best route for many to many databases. 
