@@ -35,3 +35,6 @@ sqlite> select * from ages
 1|27|true
 3|35|true
 4|29|true
+
+Release 3:
+There are 6 different kinds of joins. Inner, left, right, full, union, and outer. I think for this project the inner join works the best. From what I’ve found inner joins are the best route for many to many databases. 
