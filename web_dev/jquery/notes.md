@@ -13,3 +13,4 @@ Make a few notes in the file on how you plan to approach the topic, and why.
 Allll the research, within the timeboxed amount of time of course. Usually going over a cheat sheet and picking a few things that look interesting and trying them out is the best way to go for me. 
 
 Release 1:
+Uhhh nothing built yet, however I did find a super handy cheat sheet at http://api.jquery.com that I plan to use for release 2.
