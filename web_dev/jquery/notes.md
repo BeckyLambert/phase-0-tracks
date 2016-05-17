@@ -1,7 +1,7 @@
 Release 0:
 
 What sorts of resources will help? 
-Cheatsheets, blog posts, Stack over flow is usually a safe bet as well as a few other websites Ive had some luck with. 
+Hello Google! I'll be looking for cheatsheets, blog posts, and Stack over flow is usually a safe bet as well as w3schools which is quickly becoming one of my favorite resources. 
 
 How often should you stop and test what you just learned? 
 Very often, I like to test out what I'm learning as I learn it so that I can remember it better. 

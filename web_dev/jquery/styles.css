@@ -1,0 +1,48 @@
+html {
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	background-color: darkblue;
+}
+
+header {
+	background-color: cadetblue;
+	width: 100%;
+	height: 150px;
+	border-bottom: 3px solid lightgray;
+}
+
+h1 {
+	text-align: center;
+	font-size: 3em;
+	margin: auto;
+	color: black;
+	text-shadow: 3px 3px lightgray;
+	padding-top: 40px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 3em;
+	margin: auto;
+	color: black;
+	text-shadow: 2px 2px white;
+	padding-top: 250px;
+}
+
+div {
+	background-color: cadetblue;
+	width: 45%;
+	height: 550px;
+	display: inline-block;
+	border: 2px solid lightgray;
+	margin: 45px 2.2%;
+	border-radius: 100%;
+}
+
+
+.box1 {
+	border-radius: 5%;
+}
