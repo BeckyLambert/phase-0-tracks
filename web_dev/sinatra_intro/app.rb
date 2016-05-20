@@ -79,3 +79,16 @@ get '/add/:num1/to/:num2' do
   result = (params[:num1].to_i + params[:num2].to_i).to_s
   "#{params[:num1]} + #{params[:num2]} = #{result}"
 end
+
+# Release 1 research:
+
+# 1. Sinatra is not the only web app library in Ruby. Besides Rails there is also 
+# Cuba, Padrino, and Lotus. 
+# Source: https://blog.codeship.com/a-survey-of-non-rails-frameworks-in-ruby-cuba-sinatra-padrino-lotus/
+
+# 2. Other database mappers besides SQL and sqlite3 are Sinatra ActiveRecord Extension, Sinatra-redis,
+# and Sinatra-mongo. 
+
+# 3. Web stack is the collection of software required for Web Development. At a minimum, a
+# web stack contains an operating system, a programming language, database software,
+# and a web server. 
