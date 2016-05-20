@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Update Student Info: </title>
+</head>
+<body>
+<ul> <% @students.each do |student|%>
+ <li> <%= student['name']%>, Campus <%=student['campus']%>, Age <%=student['age']%> </li>
+ <%end%>
+ </ul>
+</body>
+</html>
